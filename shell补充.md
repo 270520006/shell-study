@@ -288,3 +288,17 @@ compose_v.yml
       - /home/zookeeper02/conf:/conf
 ```
 
+
+软连接就是一个快捷方式，建立软连接的方法
+
+ln -s source-path-or-file link-file
+
+建立硬连接
+
+ln source-path-or-file link-file
+
+ 
+
+linux进入软连接所指向的原目录
+
+cd $(readlink -f link-file)
